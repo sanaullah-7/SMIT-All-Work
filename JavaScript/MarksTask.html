@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var Name = +prompt("Enter Your Name");
+      var Math = +prompt("Enter Maths MArks");
+      var english = +prompt("Enter English MArks");
+      var Urdu = +prompt("Enter Urdu MArks");
+      var Bio = +prompt("Enter Bio MArks");
+      var Chem = +prompt("Enter Chemistry MArks");
+      var physics = +prompt("Enter Physics MArks");
+      var ObtainMarks =
+        parseInt(Math) +
+        parseInt(english)+ 
+        parseInt(Urdu) +
+        parseInt(Bio) +
+        parseInt(Chem) +
+        parseInt(physics);
+      var totalMarks = 600;
+      var percentage = (ObtainMarks / totalMarks) * 100;
+      document.write("<h1>All Subjects Marks<br></h1>");
+      document.write("Name: ", Name, "<br>");
+      document.write("Maths: ", Math, "<br>");
+      document.write("English: ", english, "<br>");
+      document.write("Urdu: ", Urdu, "<br>");
+      document.write("Biology: ", Bio, "<br>");
+      document.write("Chemistry: ", Chem, "<br>");
+      document.write("Physics: ", physics, "<br>");
+      document.write("<h3>Toatal MArks: ", totalMarks, "<br>");
+      document.write("Obtain MArks: ", ObtainMarks, "<br>");
+      document.write("<h2>Percentage =", percentage, "%");
+        if (percentage >= 90)
+      {
+        document.write("<br> Grade: A+");
+      }
+      else if (percentage >= 80 )
+      {
+        document.write("<br> Grade: B+");
+      }
+      else if (percentage >= 70)
+      {
+        document.write("<br> Grade: B");
+      }
+      else if (percentage >= 60)
+      {
+        document.write("<br> Grade: C");
+      }
+      else if (percentage >= 50)
+      {
+        document.write("<br> Grade: D");
+      }
+      else if (percentage < 50)
+      {
+        document.write("<br> Failed");
+      }
+    </script>
+  </body>
+</html>

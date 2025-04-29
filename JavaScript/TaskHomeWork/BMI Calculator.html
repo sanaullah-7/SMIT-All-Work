@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>BMI Calcualtor</h1>
+    <!-- BMI stands for Body Mass Index. A BMI calculator is a simple tool that helps you estimate whether your weight is healthy for your height. It uses your weight and height to calculate a number that categorizes your body as:
+Underweight
+Normal weight
+Overweight
+Obese -->
+            <script>
+        
+                function calculateBMI(weight, height) {
+                    var height = prompt("Enter height")
+                    var weight = prompt("Enter weight")
+    // Convert height from cm to meters
+    height = height / 100; 
+
+    // Calculate BMI using the formula
+    var bmi = weight / (height * height);  // Formula: weight / height^2
+
+    // Display result
+    alert("Your BMI is " + bmi.toFixed(2));  // Round to 2 decimal places
+}
+   calculateBMI();  // 70 kg and 175 cm height
+
+            </script>
+</body>
+</html>

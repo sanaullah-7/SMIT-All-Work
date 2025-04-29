@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><h1>Events</h1>
+    <a href="" onclick="alert('Hi')">Click me</a>
+    <a href="#" onmouseover="Popup('Hello JavaScript')">Click me</a>
+    <!-- # is a fake link...JavaScript ke liye temporary link banane mein use hota hai. -->
+    <!-- 2 -->
+     <button onclick="increment()">increment</button>
+     <button onclick="decrement()">decrement</button>
+     <!-- 3 -->
+      <button onclick="ChangeColor(style.color='Red'),ChangeColor(this.style.backgroundColor='blue')">Color</button>
+      <button onclick="ChangeColor2(this)">Color2</button>
+      <!-- 4 -->
+        <img src="./Assests/Rectangle 10 (1).png" alt="" 
+        onmouseover="src='./Guess Number/IMG_20230701_025330.jpg'"
+        onmouseleave="src='./Assests/Rectangle 10 (1).png'
+        ">
+        <!-- 5 -->
+         <label for="">UserName</label>
+         <input type="text" name="name" id="" onclick="Change()" onchange="Change()">
+    <script>
+        //Events
+        function Popup(message)
+        {
+            console.log(message)
+        };
+        //2
+        let count = 0;
+    
+        function increment()
+        {
+            console.log(count)
+            count++;
+        }
+        function decrement()
+        {
+            console.log(count)
+            count--;
+        }
+        // 3
+        function ChangeColor(color)
+        {
+            console.log("text color",color)
+        };
+        //4
+        function ChangeColor2(that)
+        {
+            that.style.backgroundColor="Yellow";
+            console.log("dlmn")
+        }
+        // 5
+        function Change()
+        {
+            console.log("it's Changing")
+        }
+    
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript</h1>
+    <script>
+        var myName = new String ("Osama");
+        var age = new Number (20);
+        console.log("My Name is " +   myName + ", and I am " + age + " years old.");
+///nested if consition
+     
+       var isStudent = true;
+       var cgpa = 3.5;
+        
+       if (isStudent){
+        if (cgpa >= 3.5)
+       {
+        console.log("Mubark sha")
+       }
+    else
+    {
+          console.log("Bagh jaoo")
+    }
+       }
+       else{
+        console.log("Abi nzar aya")
+       }
+
+       //second methd
+       console.log("Secod MEthod")
+       if (isStudent && cgpa >= 3.6)
+       {
+        console.log("Muabark hu jani")
+       }
+       else
+       {
+         console.log("Abi maja aye ga beruu")
+       }
+       //Third methd
+       console.log("Tird MEthod")
+       var semester = 8;
+       if (isStudent && (cgpa >= 3.6 || semester===8))
+       {
+        console.log("Muabark hu jani")
+       }
+       else
+       {
+         console.log("Abi maja aye ga beruu")
+       }
+
+       //Function
+       console.log("FUNCTION")
+       //()PARENTHESIS
+       function  addition(numberone , numbertwo)//parametera
+       {
+        return numberone + numbertwo;
+       }
+      //call pr inovke
+       var result = addition(14,15)//arguments
+       var resulttwo = addition(140,15)
+       console.log("Resiult=",result)
+       console.log("Resiult=",resulttwo)
+
+
+       ///
+       console.log("Logic PArctices")
+       var c = 20;
+       if (true)
+       {
+        var b =10;
+        console.log(b)
+        
+       }
+       console.log(b)
+       //
+       var a = 10;
+       var message = "world";
+       greet("Osama");
+       function greet(name)
+       {
+        message = "Hello";
+        console.log(message +""+name)
+        console.log(a)
+       }
+       console.log(message);
+       greet("SAna")
+       console.log(message)
+       console.log(a)
+
+       ///class task of caclualtor
+       function  calculator(numberone , numbertwo,operator)
+       {
+        if (operator === "+")
+         return numberone + numbertwo;
+        else if (operator === "-")
+         return numberone - numbertwo;
+        else if (operator === "*")
+         return numberone * numbertwo;
+        else if (operator === "/")
+         return numberone / numbertwo;
+        else
+        alert("Eneter A valid operator");
+
+       }
+      
+       var result = calculator(14,15,"-")
+       console.log("Resiult=",result)
+
+       //class anoter task
+       function convert() {
+            // Use prompt to get input from the user
+            var meters = prompt("Enter value in meters:");
+
+            // Check if the input is not empty and is a valid number
+            if (meters !== "" && !isNaN(meters)) {
+                // Convert meters to centimeters
+                var centimeters = meters * 100;
+                // Show the result using alert
+                alert(meters + " meters is equal to " + centimeters + " centimeters.");
+            } else {
+                alert("Please enter a valid number.");
+            }
+        }
+
+        // Call the convert function
+        convert();
+       
+       
+
+
+    </script>
+</body>
+</html>

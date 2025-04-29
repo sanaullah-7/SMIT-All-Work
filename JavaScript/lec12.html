@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // console.log('a: ', a);
+        //let a = 10;
+        
+        // // TDZ temporal Dead zone mean
+
+        // hello();
+        //  let hello =  function(){
+        //     console.log('Hello World');
+        // }
+
+
+        // Object it syntax is {} key -> value
+        //this is how we create object
+        let student = {
+            Name : "Sana Ullah",
+            isstudent : true,
+            isearned: false,
+            Age : 22,
+            Grade : 12,
+            Subjects : ['Maths','English','Science'],
+            marks : {
+                Maths : 80,
+                English : 90,
+                Science : 70
+            },
+            "my value": "this is my value ",
+
+            greet: function (){
+                console.log("Hello",this.Name)
+                console.log("Goodbye")
+            }
+            };
+            student.greet()
+            student.marks.English = 100,
+            student.Name="Sana Ullah Yousafzai",
+            student.Subjects[2]="Urdu",
+
+
+            console.log(student)
+            document.write(student.Age)
+            console.log("Age:",student.Age)
+            console.log(student.Subjects[1])
+            console.log(student["my value"])
+///PASS BY REFERENCE
+            const studentCopy = student;
+            student = studentCopy;
+            studentCopy.Age = 19;
+            console.log("Student  Age:",student.Age)
+            console.log("Student Copy Age:",studentCopy.Age)
+//////objet in array form
+
+            const Data = [
+                {
+                    name: "John",
+                    age: 30,
+                },
+                {
+                    name: "khan",
+                    age: 80,
+                }
+            ];
+            console.log("Data ",Data)
+            console.log("Data first student",Data[0])
+            console.log("Name ",Data[0].name)
+    </script>
+</body>
+</html>

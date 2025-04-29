@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <H1>Basic Arrau Manipulation</H1>
+    
+    <script>
+        //1
+        document.write("1. Create an array with five fruits names and Print the second element<br>")
+        let Fruits = ["Apple","Banana","Mango","Orange","Watermelon"]
+        console.log("1: Fruits 2nd Elemnt",Fruits[1])
+        document.write('Answer : ', Fruits[1]);
+        //2
+        document.write("<br><br>2. Replace the third element of an array with ''Mango'' and print the updated array.<br>")
+        Fruits[2] = "Pizza"
+        console.log("2: Updated Array",Fruits)
+        document.write('Answer : ', Fruits);
+        //3
+        document.write("<br><br>3. Create an empty array and add three colors to it using push() . Print the array <br>")
+        let colors = [];
+        colors.push ( "White "," Red "," Yellow")
+        console.log("3: Print",colors)
+        document.write('Answer : ', colors);
+        //4
+        document.write("<br><br>4. Remove the last element of an array  using pop() .and  Print the removed element <br>")
+        let remove = colors.pop ()
+        console.log("4: Removed Element",remove)
+        document.write('Answer : ', remove);
+        //5 
+        document.write("<br><br>5. Add two number at the begining of an array  using unshif() .and  Print the array <br>")
+        let numbers = [4,5,6]
+        numbers.unshift (1,2,"3")
+        console.log("5: Print Array",numbers)
+        document.write('Answer : ', numbers);
+        //6
+        document.write("<br><br>6. Remove the first element of an array  using shif() .and  Print the update array <br>")
+        numbers.shift()
+        console.log("6: Updated Array Array",numbers)
+        document.write('Answer : ', numbers);
+        //7
+        document.write("<br><br>7.Print the length of an array containg four element <br>")
+        console.log("7: Lenght of an Array : ",numbers.length)
+        document.write('Answer : ', numbers.length);
+        //8
+        document.write("<br><br>8. Extract the last two element of an array using slice() and print them. <br>")
+        let slice = Fruits.slice(3,5)
+        console.log("8: Slice  : ",slice)
+        document.write('Answer : ', slice);
+        //9
+        document.write("<br><br>9. Extract the middle element of an array wtih an even number using slice()  <br>")
+        let Fruitss = ["Apple","Banana","Mango","Orange","Watermelon"]
+        let sliceEven = Fruitss.slice(2,3)//Mango
+        console.log("9: SliceEven ; ", sliceEven);
+        document.write('Answer : ', sliceEven);
+        //10
+        document.write("<br><br>10. Replace the two middle elemnts in an array using splice() and print the updated array them. <br>")
+        let Cars = ["Tz"," Prado "," BMW "," Ferrrai "," Mehran "]
+        document.write(Cars,"<br>")
+        Cars.splice(2,2,"Toyota","Aqua",)// 2 element add and two remove
+        console.log("10: Updated array: ",Cars)
+        document.write('Answer : ', Cars);
+        
+
+
+    </script>
+    
+</body>
+</html>

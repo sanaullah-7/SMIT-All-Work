@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Arrays</h1>
+    <script>
+        //ARRAYS are use to  store multiple data in one variable
+        var fruits = ["Cherry", "Apple","banana", "Orange","Peach"]
+
+        console.log("Fruits:", fruits)
+        console.log(fruits[1])
+        //find last one if there is unlimited data store in array
+        var lengthh = fruits.length
+        console.log(fruits[lengthh-1])
+        fruits[5] ="pinepale"//add anoter  value on index
+        fruits[0]= "khan"
+
+        //nested array
+        var Studentone = [ "ali ", "osama"]
+        var Studenttwo = [ "ali ", "osama"]
+        var newsection = [Studentone , Studenttwo]//concetenation
+        var newsection1 = Studentone.concat (Studenttwo)//concetenation
+        console.log("NewSection=",newsection1) 
+        console.log("Full Array",newsection) 
+        console.log("Array=",newsection[1])
+        console.log("In Array=",newsection[1][0])
+
+
+
+
+    </script>
+</body>
+</html>

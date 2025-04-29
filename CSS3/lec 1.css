@@ -1,0 +1,26 @@
+    /* Universla Selector */
+    *{
+        color:red ;
+        border: 2px solid black;
+       }
+       p {
+        color: blue;
+       }
+       .text-color
+       {
+        color: green;
+       }
+       .text-large
+       {
+        font-size: 50px;
+       }
+       /* adjacent sibling */
+      h2+p
+      {
+        color: black;
+      }
+      /* General Sibling  */
+      h3~p{
+        color: brown;
+        border: 2px solid green;
+      }

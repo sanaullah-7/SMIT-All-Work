@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- what is function -->
+     <!-- ☕ "Chai banane ka function" — aap recipe likh do aik dafa, aur jab bhi chai chahiye ho, bas usi recipe ko chala lo. -->
+    <script>
+      
+      //Callback Funtion are those that call in to anoter function
+      function ChaiBanGai() {
+        console.log("Chai ban gaye ha.... ajaw penee k lye");
+      }
+      // High Order Funciton are those that return another function
+      function ChaiBanado(Callback) {
+        console.log("Chai bana raha hu...");
+        Callback();
+      }
+      ChaiBanado(ChaiBanGai);
+      ////////Clousring
+      function Multiply(num) {
+        //Outer function also Higher Order function and retrun inner function
+        return function (
+          value // Inner Function is also Higher Order function and take parameter. // clousre is a function that has access to the variables of its outer function, even after the outer function has finished executing.
+        ) {
+          return num * value;
+        };
+      }
+      const result = Multiply(5);
+      console.log("hello :", result(10));
+      ////////
+      function counter ()//Outer Function
+      {
+         let count = 0;//count is declared as a const, you cannot change its value after it’s been set initially.so we Use `let` instead of `const` because you want to modify the value of `count`
+         return function () // here in inner function clouser are doing ... so it will reminder count varibale of the outer function due to clouser
+         {
+          count++;// Increment `count`
+          return count;// Return the incremented value
+        };
+      }
+      
+        const increment = counter();// i call the outer function
+      console.log("Output :" ,increment());// i call the inner function
+      console.log("Output :" ,increment());
+      console.log("Output :" ,increment());
+
+      //MAP The map() method in JavaScript is used to transform each element of an array and return a new array with the transformed values. It doesn't modify the original array.
+      const numberss = [1,2,3,4,5,]
+      function mapCallBack (value, index ,array)
+      {
+       return 100 /(value * 10 );
+      }
+     const Square = numberss.map(mapCallBack);
+     console.log("Square",Square);
+     ///////2
+     const numberd = [1,2,3,4,5,]
+      function mapCall (value)
+      {
+       return value * value;
+      }
+     const MultiplyValue = numberd.map(mapCall);
+     console.log("Multiply",MultiplyValue);
+     //////3
+     const Squared = [1,2,3,4,5,]
+      function mapKaCallBack (value, index ,array)
+      {
+       console.log("value",value);
+       console.log("index",index);
+       console.log("array",array);
+      }
+     const value = Squared.map(mapKaCallBack);
+     console.log("Value",value);
+     
+
+      
+    </script>
+  </body>
+</html>

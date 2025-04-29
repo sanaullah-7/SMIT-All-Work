@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+   let text = " It is startling to think that, even in the darkest depths of World War II, J. R. R. Tolkien waswriting the trilogy, which contains, with the weird applicability available only to poetry andmyth, the essential notion that the good gray wizard can understand the evil magi preciselybecause he is just enough like them to grasp their minds and motives in ways that they cannotgrasp his .World War II"
+   for (var i = 0; i < text.length; i++) {
+   
+    console.log(i,i+12,text.slice(i,i+12))
+   if (text.slice(i, i + 12) === "World War II") {
+  
+    console.log(text)
+    document.write("<br><br>",text) 
+                   //34                                          //46
+text = text.slice(0, i) + "the Second World War" + text.slice(i + 12);
+   }
+  }
+  document.write("<br><br>",text)
+    console.log(text)
+/////////////////////////////////////CharAt
+    const userName = "Sana Ullah"
+    console.log(userName.charAt(0))
+
+    //////////Roundingnumber
+    const  City = prompt("Enter City")
+    const Cities = ["Lahore","Buner","Peshawar","Swat"]
+    for(let i = 0; i < Cities.length; i++) 
+  {
+    if (City === Cities[i])
+  {
+    alert("City is already in  the list")
+    break;
+}
+    else{
+    alert("City is not in the list")} ;
+    
+  }
+
+  //////while loop first condition check after print it
+  let j = 6;
+  while(j < 5)
+  {
+    console.log(j)//0,1
+    j++;//1,2
+  }
+  /////
+  let confirm = "";
+  while (confirm.toLowerCase() !=="no")//loweCase is use when user give it Upper Case lower case first convert it into lower case and then compare it with no
+  {
+    confirm = prompt("Do you want to continue?")
+  }
+
+  //////////Do while loop body will for the first time before condition check
+  let k = 0;
+  do{
+    console.log(k)//0,1,2,3,4
+    k++;//1,2,3,4
+  }while(k < 5)
+
+  
+    </script>
+</body>
+</html>

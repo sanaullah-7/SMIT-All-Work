@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <h1>Slice and Splice</h1>
+             <script>
+                //21
+                document.write("21. Extract the first three elements from an array using slice() and print them.<br>")
+                let Fruits = ["Apple","Banana","Mango","Orange","Watermelon"]
+                let slice = Fruits.slice(0,3)
+                console.log("21: Slice1 ; ", slice);
+                document.write('Answer : ',slice,"<br>");
+                //22
+                document.write("22. Extract elements from index 2 to 4 using slice() and print them.<br>")
+                let Fruitss = ["Apple","Banana","Mango","Orange","Watermelon"]
+                let slicee = Fruitss.slice(2,4)
+                console.log("22: Slice2 ; ", slicee);
+                document.write('Answer : ', slicee,"<br>");
+                //23
+                document.write("23. Remove two elements from an array starting from index 1 using splice().<br>")
+                let Fruit = ["Apple","Banana","Mango","Pineaple","Watermelon"]
+                Fruit.splice(1,2) // Starts from index 1, removes 2 elements
+                console.log("23: Splice ; ", Fruit);
+                document.write('Answer : ', Fruit,"<br>");// Output will be: [Apple', 'Pineaple', 'Watermelon']
+                //24
+                document.write("<br>24. Insert ''Lemon'' and ''Orange'' at index 2 in an array using splice() and print the updated array.<br>")
+                Fruit.splice(2,0,"Lemon","Orange") //add two elements at index 2 and, removes 0 elements
+                console.log("24: Splice ; ", Fruit);
+                document.write('Answer : ', Fruit,"<br>");// Output will be: [Apple', 'Pineaple', 'Lemon', 'Orange', 'Watermelon]
+                //25
+                document.write("<br>25. Remove the last two elements using splice() and print the modified array. <br>")
+                Fruit.splice(3,2)  
+                console.log("25: Splice ; ", Fruit);
+                document.write('Answer : ', Fruit,"<br>");// Output will be: [Apple', 'Pineaple',]
+                
+                //26
+                document.write("<br>26. Remove the last two elements using splice() and print the modified array. <br>")
+                Fruit.splice(0,0,"Malta","Keno                          ")  
+                console.log("26: Splice ; ", Fruit);
+                document.write('Answer : ', Fruit,"<br>");// Output will be: [Malta,keno,Apple', 'Pineaple', 'Lemon']
+                //27
+                document.write("<br>27. Create an array with six elements, extract the last four using slice(), and print them. <br>")
+                let number = [1,2,3,4,5,]
+                let newslice = number.slice(1,5)
+                console.log("27: Splice ; ", newslice);
+                document.write('Answer : ', newslice,"<br>");// Output will be: [2,3,4,5]
+                //28
+                document.write("<br>28. Use slice() on an array and check if the original array remains unchanged. <br>")
+                number.slice()
+                console.log("28: Slice ; ", number);
+                document.write('Answer : ', number,"<br>");// Output will be: [1,2,3,4,5,]
+                
+                //29
+                document.write("<br>29. Use splice() to remove one element from the middle of an array and print the updated array.  <br>")
+                number.splice(2,1)
+                console.log("29: Splice ; ", number);
+                document.write('Answer : ', number,"<br>");// Output will be: [1,2,4,5]
+                //30
+                document.write("<br>30. Use splice() to replace two elements in an array and print the modified array.<br>")
+                let numberr = [1,2,3,4,5,6]
+                numberr.splice(0,2,40,50)//from 0 index  replace two elements
+                console.log("30: Splice ; ", numberr);
+                document.write('Answer : ', numberr,"<br>");// Output will be: [40,50,3,4,5,6]
+                
+             </script>       
+</body>
+</html>

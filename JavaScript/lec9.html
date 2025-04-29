@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Array lec 2</h1>
+    <script>
+     // push pop shif unshift slice splice
+     var fruits = ["Banana", "Olive", "Mango","Apple",]
+     console.log("Fruits:",fruits) 
+
+     fruits.push("Pineapple") // add at end
+     console.log("Push:",fruits) // ["Banana", "Olive", "Mango", "Apple", "Pineapple"]
+     
+     fruits.pop() // remove last one
+     console.log("Pop:",fruits) // ["Banana", "Olive", "Mango", "Apple"]
+
+     fruits.shift() // remove first one
+     console.log("Shift:",fruits) // ["Olive", "Mango", "Apple"]
+
+     fruits.unshift("Cherry") // add at start
+     console.log("Unshift:",fruits) // ["Cherry", "Olive", "Mango", "Apple"]
+     //slice will show element
+     var slicedFruit = fruits.slice(1,3) // show element from 1 to 3 index
+     console.log("Slice:",slicedFruit) // ["Olive", "Mango"]
+
+     fruits.splice(2, 1, "Grapes", "Strawberry") // add at 2 index and reomve 1 element Mango
+     console.log("Splice:",fruits) // ["Cherry", "Olive", "Grapes", "Strawberry", "Apple"]
+
+    var slicedFruit = fruits.splice(0,2) // show element from 0 to 2 index
+     console.log("Splice 2:",fruits) // ["Cherry", "Olive", "Apple"]
+     console.log("Sliced Fruits:",slicedFruit) // ["Cherry", "Olive"]
+
+     fruits.reverse() // reverse the array
+     console.log("Reverse:",fruits) // ["Apple", "Olive", "Cherry"]
+
+     var anotherFriuits = ["waterMElon","Warer","orange"]
+
+     var concetenation = fruits.concat(anotherFriuits)
+     document.write("Concat==",concetenation)
+
+     //pass by reference
+     var x = [1,2,3]
+     var y = x //it gives his array address to y 
+     y[0] = 10
+     console.log("x:",x) // [10,2,3]
+     console.log("y:",y) // [10,2,3]
+     //pass by value
+     var x = [10,2,5]
+     var y = x.slice() // it makes a copy of array
+     y[0] = 100
+     console.log("x:",x) // [10,2,5]
+     console.log("y:",y) // [100,2]
+
+
+    </script>
+</body>
+</html>

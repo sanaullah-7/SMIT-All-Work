@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- listener -->
+    <h1 id="myh1">We' are learning JAvaScript</h1>
+    <button onclick="changeColor('Red')">Click me RED</button> <!--action => karo click button ka  -->
+    <button onclick="changeColor('Blue')">Click  BLUE</button>
+    <button onclick="changeColor('Green')" >Click me Green</button>
+<!--2 -->
+    <div id="box" >hello</div>
+    <button id="click" onclick="handleclick()">click</button>
+    <script>
+        //handelr
+         function changeColor(color) {
+            document.getElementById("myh1").style.color = color;//reaaction => may color change hoga
+        }
+        //Addevent Listener2
+        // addEventListener("click", ...) → Yeh sun raha hai click ka event. (listener ka kaam)
+        //- function() { alert("Button Clicked!"); } → Jab click hota hai to alert show karta hai. (handler ka kaam)
+
+                                                        //action          //reaction
+        document.getElementById("box").addEventListener("mouseover",function(){
+            alert("mouse over")
+        });
+        //3
+        
+        function handleclick(){
+            document.getElementById("click")
+            alert("i was leak")
+
+        }
+        // handleclick();
+        //👉 if You are not calling it manually in JavaScript, but  
+        //👉 HTML is calling the function when the button is clicked.
+
+        // add keydown event listener for Ctrl + A
+        document.addEventListener("keydown",function(event)//addEventListener() User ka koi action sun kar reaction dena hota yani yeah listener aur handler dono k kam karta ha.
+         {
+             if (event.ctrlKey && event.key === "a")// It’s case-sensitive, so ctrlKey (uppercase K) is the correct way to write it.
+         {
+             event.preventDefault();//event.preventDefault() kaam karta hai jab tum browser ka default action rokna chahte ho. Jaise Ctrl + A ka default action "Select All" karna hota hai.//Yeh line "Select All" action ko rok dega
+             alert("Ctrl + A Pressed")//work as event handler
+         }
+         });
+
+        
+       
+    </script>
+</body>
+</html>

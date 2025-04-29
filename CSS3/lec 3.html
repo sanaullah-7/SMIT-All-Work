@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Font Family</title>
+ <style type="text/css">
+    /* px are static and em and percent or relative they depend on its parent */
+    html{
+        font-size:10px ;
+    }
+ body {
+ font-family: Georgia, Times, serif;
+font-size: 10px}
+ h1, h2 {
+ font-family: Arial, Verdana, sans-serif;
+ font-size: 4rem;/*rem take routes path of html\
+ */
+}
+ .credits {
+ font-family: Courier, Arial, "Haettenschweiler",Impact,"fantasy";
+ 
+}
+.intro{
+    text-transform: dotted uppercase;
+    text-decoration:  dotted overline;
+    text-decoration: dashed underline;
+    text-decoration:double   line-through;
+    font-size: 2em;
+
+}
+p{
+    font-size: 3em;
+    line-height: 44px;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    text-align:right ;
+    
+
+
+}
+img{
+    vertical-align: baseline;
+    vertical-align: text-bottom;
+    vertical-align: text-top;
+
+}
+span{
+   
+    color: blue;
+    display:    flex;
+    text-indent: 40px;
+    text-shadow: -10px 10px 10px  black; /*third one is use  for blur*/
+   
+
+}
+.intro::first-letter/*pseudo class is used to target specific element or line in paparagarph */
+{ 
+    font-size: 60px;
+    font-weight: bolder;
+
+}
+
+.wow::first-line{
+    font-weight: bolder;
+    font-size: 40px;
+  
+
+}
+ </style>
+</head>
+<body>
+   
+ <h1>Biards</h1>
+ <a href=""></a>
+ <p class="credits">by Ivy Duckett</p>
+ <p class="intro">The <a class="breed" 
+ href="http://en.wikipedia.org/wiki/
+ Briard">briard</a>, or berger de brie, is 
+ a large breed of dog traditionally used as 
+ a herder and guardian of sheep...</p>
+ 
+ <p ><span>lorem ipsum dolor sit amet consectetur adipisicing elit. </span>Molestiae tempora accusamus perspiciatis itaque ab facilis, repellat ipsum pariatur illum non impedit deserunt quidem eum, sed dolore autem dicta. Debitis temporibus illum reprehenderit mollitia asperiores nulla vel vero quis? Laudantium eum doloribus sit aspernatur totam facilis magnam quidem cumque tenetur voluptas.</p>
+<div><img src="IMAGES/image.png" alt="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem pariatur magnam doloribus illum cumque amet laudantium voluptatum asperiores. Provident, repudiandae. Nostrum vero optio assumenda numquam reprehenderit cum porro sit.
+</div>
+<p class="wow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit tenetur non distinctio possimus ab dignissimos reiciendis. Dicta voluptatem cum a aperiam saepe, sunt quis possimus excepturi perferendis ratione quia dolores architecto necessitatibus impedit animi et ullam voluptates non est itaque fugiat. Quo, iure et adipisci provident rerum iste officia eos dolor reiciendis aliquid modi, iusto aliquam ipsam. Commodi at, mollitia eius quos eligendi voluptatum dolore sit, nam animi eos quam aspernatur veritatis asperiores. Ad blanditiis dolor nostrum fugit quasi cum ullam temporibus voluptas unde accusantium libero in animi commodi praesentium magni labore, sapiente facere! Totam dolorum explicabo esse officiis aut.</p>
+</body>
+</html>

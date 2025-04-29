@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Elevator()
+        {
+            var num1 = +prompt("Enter Floor Number  From (1-10)");
+            if (num1 < 1 || num1 > 10 || isNaN(num1))
+          {
+            alert("Please Enter  Valid Floor number")
+          }
+           else  
+             for(num = 1; num <= 10; num++)
+             {
+                alert("Move up to Floor " + num);
+                
+             }
+             alert("Alhamdulillah Arrived to Last Floor")
+           
+        }
+        Elevator();
+    </script>
+     
+
+             
+</body>
+</html>

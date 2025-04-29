@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peshawar Aiways</title>
+</head>
+
+<body>
+    <h1 align="center">Peshawar Airways</h1>
+    <hr>
+    <fieldset>
+        <legend>Personal Information</legend>
+        <form method="post"><!--by default form method is GET-->
+
+            <Label> First Name : <input type="text" name="FirstName" placeholder="FirstName" required id=""></Label>
+            <!--name take data value into backened mean to system-->
+            <br><br>
+            <label for="ididid"> Last Name :</label> <input id="ididid" type="text" name="last Name"
+                placeholder="last Name" required>
+            <br><br>
+
+
+            <fieldset>
+                <legend align="center">Contact info</legend>
+                Email : <input type="email" name="Eamil" placeholder="Eamil" required>
+                <br><br>
+
+                Mobile Number : <input type="text" name="mobileNumber" required>
+                <br><br>
+                Address : <input type="text" name="Address">
+            </fieldset>
+
+            <br><br>
+            Country : <select name="Country">
+                <option value="">Select Country</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="afghanistan">Afghanistan</option>
+                <option value="turkey">Turkey</option>
+                <option value="china">China</option>
+                <option value="iran">Iran</option>
+            </select>
+
+            City : <Select name="City">
+                <option value=""> Select City</option>
+                <option value="Peshawar">Peshawar</option><!--value show us data in backened-->
+                <option value="Islamabad">Islamabad</option>
+                <option value="Karachi">Karachi</option>
+                <option value="Buner">Buner</option>
+                <option value="Swat">Swat</option>
+            </Select>
+            <br><br>
+            Gender :
+            <input type="radio" name="Gender" value="Male">Male
+            <input type="radio" name="Gender" value="Female">Female
+            <input type="radio" name="Gender" value="Other">Other
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Flight Information</legend>
+
+        From :
+        <select name="from" id="" multiple><!--you can chosee multiple choice-->
+            <option>Select Defarture City</option>
+            <option value="peshawar" selected>Peshawar</option>
+            <option value="lahore">Lahore</option>
+            <option value="karachi">Karachi</option>
+        </select>
+
+        To :
+        <Select name="to :">
+            <option>Select Arrival City</option>
+            <option value="peshawar">Peshawar</option>
+            <option value="lahore">Lahore</option>
+            <option value="karachi" selected>Karachi</option>
+        </Select>
+        <br><br>
+        Meal : <!--checkbox usually use for mutiple choice-->
+        <input type="checkbox" name="meal" value="chicken Biryani" required checked id=""> chicken Biryani
+        <label><input type="checkbox" name="meal" value="Kabali fauol" id="">Kabali fauol </label>
+        <input type="checkbox" name="meal" value="Rosh" id="maza aya"><label for="maza aya"> Rosh </label>
+        <input type="checkbox" name="meal" value="Chapli Kabab" id=""> Chapli Kabab
+        <br><br>
+        Drinks :
+        <input type="checkbox" name="drinks" value="Sting" id="">Sting
+        <input type="checkbox" name="drinks" value="Shalajit Energy Drink" id=""> Shalajit Energy Drink
+        <input type="checkbox" name="drinks" value="Red Bull" id="" checked> Red Bull
+        <br><br>
+        Date :
+        <input type="date" name="date" value="2024-12-22" id="">
+        <br><br>
+        <Select name="Ticket">
+            <option>Select Airline Class</option>
+            <option value="First Class">First Class PKR600,500/-</option>
+            <option value="Business Class">Business PKR400,000/-</option>
+            <option value="PremiumEconomy Class">Premium Economy PKR300,000/- </option>
+            <option value="Economy Class">Economy PKR500,00/-</option>
+
+        </Select>
+    </fieldset>
+    <br><br>
+   <span style="font-size: larger; color: blue; font: bolder "> Additional Instruction :</span>
+    <br>
+    <textarea name="Additional Instruction" rows="5" cols="30" placeholder="Enter your details" id=""></textarea>
+    <br><br>
+    <label for=""> File:
+        <input type="file" name="IMAGE" accept=".pdf , .docx" checkfilesize="1KB" id="">
+        <input type="submit" name="subsrcribe" value="upload">
+    </label>
+    <br>
+    <input type="image" src="Images/button.jpg" alt="submit image" title="submit" width="100">
+    <input type="hidden" name="honeyPot" value="">
+    <br>
+    <button>Submit</button>
+    <br>
+    </form>
+    <br>
+    <iframe width="450" height="500" src="https://www.aup.edu.pk/ "></iframe>
+    <iframe width="650px" height="300" name="my frame"></iframe>
+    <a target="my frame" href="/Images/giphy.webp "><h1>video</h1></a>
+    <a target="my frame"  href=  "/Images/kabab.png "><h2>image</h2></a>
+
+
+</body>
+
+</html>

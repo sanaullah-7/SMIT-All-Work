@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Loops</h1>
+    <h3>for</h3>
+    <script>
+      //for loops
+      //initiliazation
+      //Condition   (<= or >=)
+      //increment/decrement ++ , --
+
+      for (var i = 0; i <= 10; i++) {
+        console.log(i, 2 * i);
+      }
+      //
+      var tableNumber = 3;
+      for (var i = 0; i <= 10; i++) {
+        console.log(tableNumber + " * " + i + "= " + tableNumber * i);
+      }
+      //Character with his index
+      var Alphabatic = ["a", "b", "c", "d", "e"];
+
+      for (var i = 0; i < Alphabatic.length; i++) {
+        console.log(Alphabatic[i], i);
+      }
+      //to find specific characters
+      for (
+        var i = 0;
+        i < Alphabatic.length;
+        i++ //we write .length because here  come total length of array
+      ) {
+        if (Alphabatic[i] === "c") {
+          // continue;
+          console.log("Mil Gaya", i);
+          // break;
+        } else {
+          console.log("Nahi Mila", i);
+        }
+      }
+      //Reverse direction
+      for (
+        var i = Alphabatic.length - 1;
+        i >= 0;
+        i-- //Alphabatic.length gives the total number of elements in the Alphabatic array..By subtracting 1 from Alphabatic.length, we get the last index of the array which are 4
+      ) {
+        console.log(Alphabatic[i], i);
+      }
+
+      //
+      const auditorium = [
+        ["A", "B", "C", "D", "E", "F", "G", "H", "I"], //0 - first row auditorium[0][5]=> ["A","B","C","D","E","F"]
+        ["A", "B", "ZZ", "D", "E", "F", "G", "H", "I"], //1 - second row auditorium[1][5] => F
+        ["A", "B", "C", "D", "E", "F", "G", "H", "I"], //2 - third row auditorium
+      ];
+      console.log(auditorium[1][2]); //ZZ  which is in the second row (index 1) and third column (index 2
+      for (let j = 0; j < auditorium.length; j++) {
+        console.log("Row index", j);
+
+        for (let k = 0; k < auditorium[j].length; k++) {
+          console.log(auditorium[j][k], j, k); // the row index (j), and the column index (k)
+        }
+      }
+    </script>
+  </body>
+</html>

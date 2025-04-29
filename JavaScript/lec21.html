@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <H1>Topic LoaclStorage</H1>
+    <script>
+        // WHAT IS local Storage
+        //👉 localStorage is a built-in JavaScript object that lets you store data in the browser, and it stays there even after you close the tab or browser.
+//It’s like saving small pieces of data (like user settings, tokens, etc.) directly on the user's device.
+//It stores data as key-value pairs (both are strings).
+//The data never expires (unless you manually clear it).
+//It's super fast because it's local — no server calls
+// URDU.
+// localStorage JavaScript ka ek built-in feature hai jo browser ke andar chhoti moti information save karta hai.
+// Yeh data browser band karne ke baad bhi safe rehta hai, jab tak tum khud delete na karo.
+// Samajh lo jaise ek chhoti diary hoti hai browser ke andar, jisme tum key-value (naam-aur-value) ke pair mein cheezein likh sakte ho.
+// Important baatein:
+// Key aur Value dono string hoti hain.
+// Data kabhi expire nahi hota, jab tak tum remove ya clear na karo.
+// Sirf usi browser mein available hota hai (server ko nahi bhejta).
+       
+        //note => both key and value must be in string
+        localStorage.setItem("name","sanaullah")//setItem(key,value) store key/value pair
+        // Save data
+        localStorage.setItem("namee","SanaullahKhan")
+        // Read data
+        const data = localStorage.getItem("namee")//getItem(key) get value by its key
+        console.log('data: ', data);
+        // Remove data
+        localStorage.removeItem("name")//removeITem(key) remove the key with its value
+        // Clear everything
+        //   localStorage.clear()//delete Everything
+
+        //in object form
+          const user ={
+            name:"Ayan",
+            email:"abc@gamil.com",
+            password:12345,
+          };
+        //   localStorage.clear("user")
+          const stringify = JSON.stringify(user);//convert object into string
+          console.log('stringify: ', stringify);
+          // see in application
+          localStorage.setItem("user", user)//[object Object]
+          localStorage.setItem('1st method',JSON.stringify(user))//see in application...1st method or
+          localStorage.setItem("user23", stringify)   //<--| 2nd
+ //                                                       |
+//                                                        | it gey by same key
+          const user2 = JSON.parse(localStorage.getItem("user23"));//convert string  into object 
+          console.log('object: ', user2);
+          localStorage.setItem("user2", user2)//[object Object]
+
+
+        
+
+
+        // // 
+        //   const email = "khan123@gmail.com";
+        //   const userss    = JSON.parse(localStorage.getItem("user"));
+        //   const founder = userss.find((item)=>item.email=== email)
+        //   console.log('founder: ', founder);
+        // simple insert dataa into local storage and then romove
+     
+   
+//2nd example
+    let student={
+        name:'sana',
+        roll:'120'
+    };
+    let str=JSON.stringify(student)
+    // // str='{"name":"sana","roll":"120"}'
+    console.log("string",str);    //key                 value
+    localStorage.setItem('abc',JSON.stringify(student))//see in application
+    
+    localStorage.setItem('stdudent',student)//[object Object]...  while in same key it does not show this [object Object] 
+    localStorage.setItem('stdudent',str)
+    console.log("object",JSON.parse(localStorage.getItem("abc")) )
+    console.log("object",JSON.parse(localStorage.getItem("ab")) )//show null because we canot  give same key
+
+    //    localStorage.clear('name')
+
+
+   
+
+    </script>
+</body>
+</html>

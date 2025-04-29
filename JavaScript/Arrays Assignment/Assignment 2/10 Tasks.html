@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Push ,Pop , Shif and Unshift</h1>
+    <script>
+        //11
+        document.write("11. Create an array of three cities and add a new city at the end using push().<br>")
+        let  City = ["Buner","Swat","Islamabad"]
+        City.push("Lahore")
+        console.log("Push :",City)
+        document.write("Answer : ",City,"<br>")
+        //12
+        document.write("12. Remove the last city from an array using pop() and print the updated array. <br>")
+        City.pop("Lahore")
+        console.log("POP :",City)
+        document.write("Answer : ",City,"<br>")
+        //13
+        document.write("13. Add two new colors to the beginning of an array using unshift() and print the array.  <br>")
+        let  Color = ["Blue","Red","Yellow"]
+        Color.unshift("White","Black")
+        console.log("Unshift :",Color)
+        document.write("Answer : ",Color,"<br>")
+        //14
+        document.write("14. Remove the first color from an array using shift() and print the removed color.   <br>")
+        Color.shift()
+        console.log("Shift :",Color)
+        document.write("Answer : ",Color,"<br>")
+        //15
+        document.write("15. Use push() twice to add two new names to an array and print the array. <br>")
+        let Name = ["Aayan Ullah","Tahseen Ullah","Sana Ullah"]
+        Name.push("Mati Ullah")
+        Name.push("Amin Ullah")
+        console.log("Push Tice :",Name)
+        document.write("Answer : ",Name,"<br>")
+        //16
+        document.write("16. Use pop() on an array of five elements and check if the length is now four.  <br>")
+        Name.pop()
+        console.log("Pop check length :",Name.length)
+        document.write("Answer : ",Name.length,"<br>")
+        //17
+        document.write("17. Use shift() on an array with three elements and print the updated array. <br>")
+        let number = [2,3,4]
+        number.shift()//2,3
+        console.log("Updated Array :",number)
+        document.write("Answer : ",number,"<br>")
+        //18
+        document.write("18. Use unshift() to add a new number at the beginning of an array and print it. <br>")
+        number.unshift(1,2)//1,2,3,4
+        console.log("Print :",number)
+        document.write("Answer : ",number,"<br>")
+        //19
+        document.write("19. Create an array of three numbers, remove the last one using pop(), and print the remaining array.  <br>")
+        let numberr =[1,2,3]
+        document.write("[",numberr,"]","<br>")
+        numberr.pop()//1,2
+        console.log("Print :",numberr)
+        document.write("Answer : ",numberr,"<br>")
+        //20
+        document.write("20. Create an array with three elements, remove the first using shift(), and print the updated array.<br>")
+        let num =[1,2,3]
+        document.write(num,"<br>")
+        num.shift()//2,3
+        console.log("Updated Array :",[num])
+        document.write("Answer : ",[num],"<br>")
+
+        
+    </script>
+    
+</body>
+</html>

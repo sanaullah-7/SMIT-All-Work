@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Unit(cm , mm)
+        {
+           var cm = prompt("Enter Value in Centimeter")
+
+           if (cm !== "" && !isNaN(cm))//!: isNan mean it is not a number 2: !isNan mean if it is a number or the first talk is wrong
+           {
+            var mm = cm * 10;
+            alert("Result : "+ cm +"cm convert to  "+ mm +" mm")
+           }
+           else
+           {
+            alert("Please enter a Valid Number")
+           }
+
+        }
+        Unit();
+    </script>
+</body>
+</html>

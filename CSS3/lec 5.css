@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* border: 1px solid tomato; */
+    box-sizing: border-box;
+
+}
+header{
+    background-color: lavender;
+    /* height: 50px; */
+    padding: 15px ;
+    
+}
+#logo{
+    font-weight: bold;
+    display: inline-block;
+    background-color: orange;
+    padding: 5px;
+
+
+    
+}
+.nav-menu{
+    list-style-type: none;
+    text-align: right;
+    display: inline-block;
+    /* margin-left: 100px; */
+   
+    
+}
+li{
+    display: inline-block;
+    padding: 6px;
+    background-color: orange;
+    cursor: pointer;
+    transition: 1s ease;
+    
+}
+li:hover{
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    background-color: rgb(82, 42, 226);
+    cursor: pointer;
+    transition: 1.5s ease;
+}
+
+/* SECTION */
+.container{
+    margin-top: 50px;
+    width: 400px;
+    background-color: bisque;
+    padding: 10px;
+    text-align: justify;/* the wrriting will be come to in pattern */
+    line-height: 24px;/* there is gap between each line from above */
+    /* text-align: center; */
+    margin: 50px auto ;
+    border-color:GREEN blue red;
+    border-width: 3px 8px 15px 4px;
+    border-style: solid;
+    box-shadow: 5px 8px 20px 20PX gray;
+    /* BOX SHADOW : horizental , vertical, blur, sprerad */
+    border-radius: 200px 10px 40px 30px;
+    overflow: hidden; /*the paragrabh writing is fixed in the box  */
+   
+}
+h1{
+    text-align: center;
+color: brown;
+font-size: xx-large;
+animation: 1.5s blink ease infinite;
+}
+    
+@keyframes  blink{
+
+ 
+    50%{
+        /* opacity: 0; */
+      color: greenyellow;
+     
+
+    }
+  }
+
+.image{
+   
+    background-image: url(image.png);
+    width: 150px;
+    height: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    margin: 20px auto;
+    border-radius: 100%;
+    /* background-size: cover; */
+    
+}
+

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector</title>
+    <style>
+         
+       *{
+        /* margin: 0; */
+        padding: 0;
+       }
+        a:link{
+            color: blue;
+            text-decoration: none;  /* to remove underline form link */
+          
+            transition: 1s ease-in-out;
+        }
+        a:visited{
+            color: green;
+            text-decoration: none;
+        } 
+        a:hover{
+            color: red;
+            text-decoration: underline;
+            transition: 1s ease;
+
+        }
+        
+        a:active/* this  use when we right click on link or text fro any time  */
+        {
+            color: yellow;
+        }
+       
+      
+
+
+        input[type="password"]:focus{
+            border: 2px solid blue;
+            /* transition: 1s ease; */
+            outline: none;
+        }
+        input[type="text"]:focus{
+            border: 2px solid red;
+            /* transition: 1s ease; */
+            outline: none;
+        }
+        input[class="b"]:focus{
+            border: 2px solid red;
+            /* transition: 1s ease; */
+            outline: none;
+        }
+        input[class^="cat"]:focus{
+            border: 2px solid green;
+            /* transition: 1s ease; */
+            outline: none;
+        }
+        input[class*="a"]:focus{
+            border: 2px solid purple;
+            /* transition: 1s ease; */
+            outline: none;
+        }
+        input[class~="dog"]:focus{
+            border: 2px solid orange;
+            /* transition: 1s ease; */
+            outline: none;
+        }
+        input[class$="ey"]:focus{
+            border: 2px solid chartreuse;
+            /* transition: 1s ease; */
+            outline: none;
+        }
+
+
+        /* lec 13 */
+        /* body{
+            border: 2px solid red;
+            box-sizing: border-box;} */
+
+        div{
+            width: 800px;
+            height: 600px;
+            border: 2px solid black;
+            padding: 20px;
+            overflow: scroll;
+            background-color: aqua;
+            
+
+        }
+        p{
+            border: 1px solid black;
+            width: 75%;
+            background-color:bisque;
+        }
+        p.class1{
+             
+         
+            max-width: 400px;
+            min-width: 300px;
+           
+
+            min-height: 100px;
+            max-height: 300px;
+            
+            /* overflow: hidden; */
+            overflow:auto;  
+
+            padding: 20px 10px;
+            margin: 60px;
+            /* padding: top right bottom left;  */
+            /* border: top right bottom left;  */
+
+        
+    }
+
+    </style>
+</head>
+<body>
+    <h1><a href="http://www.google.com">Vist Google</a> </h1>
+    <h1><input type="text" ></h1>
+    <input type="password">
+    <input type="password" class="b">
+    <input type="password" class="cat baubble">
+    <input type="password" class="cat baubble">
+    <input type="password" class="dog khan">
+    <input type="password" class="dog donkey">
+    <br><br>
+    
+    <!-- lec 13 -->
+     <div>
+       <p> Hello World! This My Div Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum amet inventore reiciendis sit a impedit corporis qui ex quo nesciunt.</p>
+       <p class="class1"> Hello World! This My Div Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus dolorem aperiam sit officiis quidem, quod voluptatem fugiat rem labore eum quas quos. Nostrum, totam iste consequatur dolor ipsum, dolorum reprehenderit ea id culpa repellat placeat velit non praesentium labore. Quam corrupti distinctio harum officiis adipisci, explicabo fugiat iusto nesciunt in. Lorem, ipsum lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum rem libero pariatur minima quos commodi alias tenetur aut totam incidunt doloremque et, minus velit sunt necessitatibus animi? Commodi deserunt nesciunt vel, excepturi architecto officia. Ex non sint ad quis possimus repellendus nostrum error. Sed, quae libero ipsam placeat ab necessitatibus? Hic aliquam officia nemo nobis officiis? Error quis dicta, porro temporibus, voluptas hic assumenda earum enim deserunt obcaecati soluta dolor mollitia incidunt ducimus sed sapiente? Voluptatem at adipisci maxime, modi sapiente laborum iure placeat, obcaecati ab minus illum, nemo ullam distinctio dolore commodi itaque magnam odit facere possimus sequi provident. dolor sit amet lorm consectetur adipisicing elit. Voluptatum amet inventore reiciendis sit a impedit corporis qui ex quo nesciunt.</p>
+     </div>
+</body>
+</html>

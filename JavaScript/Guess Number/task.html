@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Guess Number</title>
+  </head>
+  <body>
+    <script>
+      //if you want to run program again and agian you  should use while loop
+      //Agar aap kisi decimal number ko chhupana chahte ho aur sirf poora number dikhana chahte ho, toh Math.floor() perfect tool hai!
+      // Math.random() generates a random number between 0 and 1.
+      // Phir us number ko 50 se multiply karke usse 0 se 50 ke beech karte hain.
+      // Ab agar yeh number decimal ho gaya, toh Math.floor() usko neeche round off kar dega, jaise agar 49.98 mila, toh woh 49 ban jayega.
+      // Aur +1 karne se hamesha number 1 se 50 ke beech aata hai, na ki 0 se 49 ke beech.
+
+      const RandomNumber = Math.floor(Math.random() * 25) + 1;
+
+      while (RandomNumber == RandomNumber) {                            //    <-
+        let UserGuess = +prompt("Please Enter Number 1 between 25");    //      |                                            //
+        if (UserGuess > RandomNumber) {                                 //      | 
+          alert("Too High");                                            //      | 
+        } else if (UserGuess < RandomNumber) {                          //      | 
+          alert("Too Low");                                             //      | 
+        } else {                                                        //      | 
+          alert("Congratulations! You've guessed the number");          //     <-
+          break;
+          // If user guesses the number correctly, break the loop and exit the program.
+        }
+      }
+    </script>
+  </body>
+</html>
+<!-- function user (user) {
+  user.some();
+} -->

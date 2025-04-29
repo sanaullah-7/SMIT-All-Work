@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Cahpter:7  FORMS</title>
+</head>
+<body>
+    <H1>Basic Form</H1><!--by deafult form is in get form-->
+
+    <form method="post"  action="lec 5 action.html"><!--copy path  because post it is not configure-->
+       Username : <input type="text" name="Username" required maxlength="20" size="30" >
+       <br><br>
+       Password : <input type="password" name="Password"  required="true" maxlength="10" size="80">
+       <p>
+        Select your favourite Gender :
+        <br>
+        <label for="1">
+              <input type="radio" name="gender" value="male" id="1" checked="checked">Male 
+        </label><!--name
+        The name attribute indicates 
+        the name of the password input, 
+        which is sent to the server with 
+        the password the user enters.-->
+        <br>
+        <label for="2">
+            <input type="radio" name="gender" value="female" id="2" checked><!--value atributes are use for system undertanding -->
+             Female
+       </label>
+       <br>
+       <label for="3">
+        <input type="radio" name="gender" value="other" id="3">Others
+       </label>
+       
+    <p>Write Your Opinion</p>
+        <textarea name="comments" rows="5" cols="40" id="">Feedback</textarea>
+    </p>
+       <button>Submit</button>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    //constructor
+    function Plan(name, price, transfer, pages ,  dicountMonths)
+    {
+        this.name = name;//Ye har value ko object ke andar set karta hai. Jaise agar name "Basic" hai, to ye this.name = "Basic" karega.
+        this.price = price;
+        this.transfer = transfer;
+        this.pages = pages;
+        this.dicountMonths = dicountMonths;
+        this.CalcualteAnnualPrice = function (discountPercentage)//Ye method 12 mahine ki total price calculate karta hai. Agar current month discount month mein hai, to discount lagata hai.
+        {                           //3.99
+            let discountPrice = this.price;//(as array of numbers 0–11, where 0 = Jan, 3 = April)
+            const currentDate = new Date("April 30, 2024");//WE give it fixed date
+            const currentMonth =  currentDate.getMonth();
+
+            for (let index = 0; index < this.dicountMonths.length; index++)// It loops through the discount months. If the current month matches, it applies the discount and stops the loop.
+        {
+            const  element = this.dicountMonths[index];
+            if (element === currentMonth)
+        {                       
+            discountPrice =  this.price * discountPercentage;
+            break;
+        }
+        }            
+        return discountPrice * 12; //3.99 * 12 = 47.88 //47.88 * 0.5=23.94                                                
+    };
+}
+Plan.prototype.printPrice = function (key)//Ye method object ke kisi bhi property ka naam de kar uska value print karta hai.
+{
+    console.log("Print value ",this[key])
+}
+    const Paln1 = new Plan("Basic",3.99,100,1000,[3,10]);//months start from 0 and the discounts months are 3 and 10 which are April and November
+    const plan1Discount = Paln1.CalcualteAnnualPrice(0.5); //50% discount on basic plan
+    console.log('Paln1: ', Paln1);
+    console.log('plan1Discount: ', plan1Discount);
+    
+
+
+    const Paln2 = new Plan("Premium",5.99,500,5000,[3,4,11])
+    const plan2Discount = Paln2.CalcualteAnnualPrice(0.5); //50% discount on Premium plan
+    console.log('plan1Discount: ', plan2Discount);
+
+    Paln1.printPrice("name");
+    Paln2.printPrice("name");
+
+     // 1 same
+     function Student(name)
+    {
+        this.name = name;
+
+    }
+    const studentOne = new Student("Ali");
+    console.log('studentOne: ', studentOne);
+
+    const anotherStudent =new Student ("Khalid");
+     console.log('anotherStudent: ', anotherStudent);
+
+     Student.prototype.printName= function(){
+        console.log(this.name);
+    };
+    studentOne.printName();
+    anotherStudent.printName();
+
+    ///Method 2
+    var  student = {
+        name : "Sana",
+    };
+
+    student.printName = function()
+    {
+        console.log(this.name)
+    }
+    var  student2 = {
+        name : "khan",
+    };
+
+    student2.printName = function()
+    {
+        console.log(this.name)
+    }
+    console.log("studend1",student)
+    console.log("studend2",student2)
+    student.printName();  // Output: Sana
+    student2.printName(); // Output: Khan
+   
+</script>
+</body>
+</html>

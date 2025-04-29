@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- When you type something in the "Country" box and then click outside (lose focus), the function handelblur() is called. -->
+    Coutry:<input type="text" onblur="handelblur()" name="" id="country">
+    City:<input type="text"  name="" id="city">
+<script>
+    //.value ka matlab hota hai:
+    //"User ne input box ke andar jo likha hai, woh le lo."
+    //Agar user ne likha hai "Pakistan", to country.value === "Pakistan" hoga.
+    //switch check karta hai ke user ne kya likha hai country field mein, aur usi ke mutabiq city set karta hai.
+
+
+    function handelblur(){
+        const country  = document.getElementById("country");
+        const cityname  = document.getElementById("city");
+
+        let city ="";
+
+        switch (country.value) 
+        {
+            case "Pakistan":
+                city="islambad";
+                break;
+        
+            case "India":
+                city="Dehli";
+                break;
+        
+            case "USA":
+                city="New York";
+                break;
+                default:
+                 city=   "Unknown"; 
+        }
+        cityname.value= city;
+    }
+    
+   //switch Statement
+   // A switch statement is used when you want to check one value against multiple possible cases. It’s like saying:
+   // "If it's this, do this... if it's that, do that..."
+   // It works similar to multiple if...else statements, but it’s cleaner and easier to read when you have many options.
+   const fruit = "Mango";
+   switch (fruit)
+   {
+    case "Mango":   
+        console.log("Mango is so sweet")
+        break;
+    case "Apple":
+        console.log("Apple is are red")
+        break;
+        default:
+            console.log("No Friut Found")
+   }
+   //2
+   const days = 7;
+   switch (days)
+   {
+    case 1:
+        console.log("Monday")
+        break;
+    case "2":
+        console.log("Monday")
+        break;
+        
+    case "2":
+        console.log("Monday")
+        break;
+    case "4":
+        console.log("Monday")
+        break;
+    case "5":
+        console.log("Monday")
+        break;
+    case "6":
+        console.log("saturday")
+        break;
+    case 7:
+        console.log("Sunday")
+        break;
+    default:
+        console.log("please enter 1-7")
+   }  
+   //switch is same as if else
+   if (fruit === "Mango") {
+    console.log("Mango is so sweet");
+     } else if (fruit === "Apple") {
+         console.log("Apple is are red");
+     } else {
+         console.log("No Fruit Found");
+     }
+    //2
+
+   console.log("Events Topic....")   
+</script>
+
+
+</body>
+</html>

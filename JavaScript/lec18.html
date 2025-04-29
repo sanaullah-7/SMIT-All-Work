@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="para">Hello</p>
+    <button onclick="addtext()">Add text</button>
+    <button onclick="hidetext()">Hide text</button>
+    <br><br>
+    <!--  -->
+   ID <input type="text" name="" id="user-id">
+   Name<input type="text" name="" id="result">
+   <button onclick="handlerSearch()">Serach</button>
+    <script>
+         function addtext()
+         {
+          const element =  document.getElementById("para");//
+          const coustomtext = "<b>World</b> !";
+          element.innerHTML += coustomtext;// textContent or innerHTML =>It ignores HTML tags.and It sets or gets only the text inside an element.
+          // You can include tags like <b>, <i>, <div>
+
+         }
+         function hidetext()
+         {
+            const  element = document.getElementById("para")
+            element.style.display ="none";//display property CSS mein use hoti hai aur yeh decide karti hai ke ek element kaise page par dikhai dega...Agar aap kisi element ka display ko none set karte hain, to wo element puray page se hide ho jata hai.
+         }
+         ///objects in array
+         const students = [
+            {id : 1, name:"SanaUllah"},
+            {id : 2, name:"TahseenUllah"},
+            {id : 3, name:"Ayanllah"},
+            {id : 4, name:"Matillah"},
+            {id : 5, name:"Aminullah"},
+            {id : 6, name:"Talha"},
+         ];
+         function handlerSearch()
+         {
+            const userIdField = document.getElementById("user-id");
+            const NameResult = document.getElementById("result");
+
+            const findStudent = students.find(function(student)//.find() hum tab use karty ha jab sirf	Jab ek hi result chahiye//aur .filter() Jab multiple results chahiye
+            {
+                return(student.id == userIdField.value)//You're using ==, which means loose comparison.//So 1 == "1" will return true//=== is strict comparison.//It checks both value and data type.//So 1 === "1" ➝ false because one is number, other is string.//we give only 2 equal sign == that it doesnt check strictly beacuse i id is number and name  is string so therefore ...3 eqaual  check strictly and  dost not show student name okay baby  
+             })
+            if (findStudent)
+            {    //Agar student  mil gaya to uska naam input box me likh do.
+                 NameResult.value = findStudent.name;//.value tab use hote ha Jab  <input> ya <textarea> hai to hamesha .value lagta hai.
+            }else{
+                NameResult.value ="not found"//Agar nahi mila to "not found" likho.
+            }
+            };
+             
+    </script>
+</body>
+
+</html>

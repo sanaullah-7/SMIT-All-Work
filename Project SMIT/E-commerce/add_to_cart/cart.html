@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add to Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="goToCart">
+        <p>Home / <b>Cart</b></p>
+    </div>
+    <div class="wholeCart">
+        <div class="cartsection">
+            <div class="cartMainSection">
+                <label for="Products">
+                    <h2>Products</h2>
+                </label>
+                <label for="Price">
+                    <h2>Price</h2>
+                </label>
+                <label for="Quantity">
+                    <h2>Quantity</h2>
+                </label>
+                <label for="Subtotal">
+                    <h2>Subtotal</h2>
+                </label>
+            </div>
+            <div class="cartSection1">
+                <p>
+                    <label for="Products">
+                        LCD Monitor
+                    </label>
+                    <img src="assets/Monitor-Cart-Small.png" alt="Monitor-Cart-Small" class="cartImage1" />
+                </p>
+                <p>
+                    <label for="Price">
+                        $100.00
+                    </label>
+                </p>
+                <p>
+                    <label for="Quantity">
+                        <input type="number" name="quantity" id="quantity" value="1" min="1" max="10" />
+                    </label>
+                </p>
+                <p>
+                    <label for="Subtotal">
+                        $650.00
+                    </label>
+                </p>
+            </div>
+            <div class="cartSection2">
+                <p>
+                    <label for="Products">
+                        H1 Gamepad
+                    </label>
+                    <img src="assets/g92-2-500x500 1.png" alt="gamePad" class="cartImage2" />
+                </p>
+                <p>
+                    <label for="Price">
+                        $550.00
+                    </label>
+                </p>
+                <p>
+                    <label for="Quantity">
+                        <input type="number" name="quantity" id="quantity" value="1" min="1" max="10" />
+                    </label>
+                </p>
+                <p>
+                    <label for="Subtotal">
+                        $550.00
+                    </label>
+                </p>
+            </div>
+            <div class="returnToShopbutton">
+                <button>Return to Shop</button>
+            </div>
+            <div class="updateCartButton">
+                <button>Update Cart</button>
+            </div>
+        </div>
+        <div class="moneySection">
+            <div class="couponCodeSection">
+                <label for="couponCode">
+                    <h2>Coupon Code</h2>
+                </label>
+                <input type="text" name="couponCode" id="couponCode" />
+                <button>Apply Coupon</button>
+            </div>
+            <div class="cartTotalBox">
+                <div class="cartTotal">
+                    <label for="cartTotal">
+                        <h2>Cart Total</h2>
+                    </label>
+                    <p>
+                        <label for="Subtotal">
+                            Subtotal
+                        </label>
+                        <label for="Subtotal">
+                            $1,200.00
+                        </label>
+                    </p>
+                    <p>
+                        <label for="Shipping">
+                            Shipping
+                        </label>
+                        <label for="Shipping">
+                            $50.00
+                        </label>
+                    </p>
+                    <p>
+                        <label for="Total">
+                            Total
+                        </label>
+                        <label for="Total">
+                            $1,250.00
+                        </label>
+                    </p>
+                </div>
+                <div class="checkoutButton">
+                    <button>Proceed to Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

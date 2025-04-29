@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>FindAge</h1>
+    <script>
+        function Age(YearOfBirth,CurrentYear) 
+        {
+            var YearOfBirth = +prompt("Enter Year of Birth")
+            var CurrentYear = new Date ().getFullYear();
+
+            var result = CurrentYear - YearOfBirth;
+
+            alert("Age:"+ result)
+            
+        }
+        Age();
+    </script>
+</body>
+</html>

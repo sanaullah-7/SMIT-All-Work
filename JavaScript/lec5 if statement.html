@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var YearOfBirth = +prompt("Enter Your Year Of Birth");
+      var currentdate = new Date();
+      var CurrentAge = currentdate.getFullYear() - YearOfBirth;
+      console.log(YearOfBirth);
+      console.log(currentdate);
+      console.log(CurrentAge);
+
+      if (CurrentAge >= 18) {
+        alert("You can vote");
+      }
+      //Comparison Operator
+      // ==
+      // === datatype  comparison
+      // >=
+      // <=
+
+      var userName = prompt("Please enter your Name");
+      var AllowUserName = "SanaUllah";
+
+      if (userName === AllowUserName) {
+        console.log("You can Use Your Website\nCorrect Name");
+      }
+
+      var number = +prompt("Please enter any number");
+      var luckynumber = 123;
+      if (number === luckynumber) {
+        console.log("");
+      }
+    </script>
+  </body>
+</html>

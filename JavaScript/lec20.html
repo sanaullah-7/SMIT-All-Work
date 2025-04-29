@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form onsubmit="handlesubmit(event)" action="">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="nam">
+        <label for="email">email</label>
+        <input type="text" name="email" id="email">
+        <label for="password">password</label>
+        <input type="password" name="password" id="password">
+        <button type="submit">submit</button>
+    </form>
+    <!-- 2 -->
+    <div>diving
+        <p>l</p>
+    </div>
+    <p>this is para</p>
+    <p>this is para</p>
+    <p>this is para</p>
+    <script>
+        function handlesubmit(event) {
+            event.preventDefault();// Don’t reload the page.// Don’t send data to server automatically.
+            console.log(event.target.name.value);
+            console.log(event.target.email.value);
+            console.log(event.target.password.value);
+
+            // event.target.reset();
+        }
+        //2
+        const para = document.getElementsByTagName("p");
+        console.log(para)
+        const para2 = document.querySelector("p");
+        console.log(para2)
+        const para3 = document.querySelectorAll("p");
+        console.log(para3)
+        para[2].style.color = "blue"// giveing color
+
+
+        //arrow function of 
+        console.log("Arrow  function")
+        //Explicit return => use return and curly Braces
+        const greet = name => {
+            return "Hello " + name;
+        }
+        console.log(greet("Sana"))
+        //Implicit Return => N
+        // o return and Curly braces
+        const Implicit = name => "Helloo " + name;
+        console.log(Implicit("SanaUllah"))
+
+        ///2
+        const multiply = (x, y) => {
+            return x * y;
+        }
+        console.log(multiply(2, 5))
+        ///3
+        //setimeout time ko yani waqat ko delay karwata ha
+        setTimeout(() => {
+            console.log("🎉 Boom! 1 second complete.");
+        }, 1000);
+
+        setTimeout(() => {
+            console.log("🎊 2 seconds done!");
+        }, 2000);
+
+        setTimeout(() => {
+            console.log("🔥 3 seconds over!");
+        }, 3000);
+        // const student = 
+        ///find true value in array
+        const dataArray = [1, 2, 0, null, "hello", undefined, 3, null, false, 66, ""]
+        const trueValues = dataArray.filter((item) => item);
+        console.log("1 method", trueValues)
+
+        console.log("2 method", dataArray.filter(Boolean))
+        //Boolean is a function that converts each value into either true or false.
+
+
+    </script>
+    <script>
+        //backtick
+        const multiple = `${2 * 5}        yar yeah tu boht majy ka ha aur mutiply b hogya`
+        console.log('multiply: ', multiple);
+        //
+        function message(Fullname) {
+            return `${Fullname}, Today is running`
+        }
+        console.log(message("Farhan"))//1 method
+        const result = message("Ayan Ullah");// 2 mrhoid
+        console.log('result: ', result);
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Object Constructor
+      const student = {
+        firstName: "Sana",
+        lastName: "Ullah",
+        PrintFullName: function () {
+          console.log(this.firstName + " " + this.lastName); //"this" is use to take firstName in the or from the object
+        },
+      };
+      student.PrintFullName();
+      ////////////////////////////////
+      function Car(make, model, year) //parameters
+       // "this" keyword is used to access and modify properties of the current object.
+       {
+        this.make = make;
+        this.model = model;
+        this.year = year;
+        // this.drive = function () {
+        //   console.log(this.make + " " + this.model + " is driving.");
+        // };
+      }
+      const car = new Car("Toyota", "khan", 2025); //Jab aap new keyword ka use karte hain, to yeh constructor function apne aap call hota hai aur ek naya object create karta hai.
+      console.log("Car", car);
+      const alto = new Car("Suxuki", "alto vxl", 2025);
+      console.log("Car", alto);
+      ////
+      const CurentDate = new Date();
+      document.write("Current Date:", CurentDate, "<br>");
+      document.write("Current Date:", CurentDate.getDate(), "<br>");
+      document.write("Current Day:", CurentDate.getDay(), "<br>");
+      document.write("Current Year:", CurentDate.getFullYear(), "<br>");
+      document.write("Current hour:", CurentDate.getHours(), "<br>");
+      document.write("Current MS:", CurentDate.getMilliseconds(), "<br>");
+      document.write("Current Minute:", CurentDate.getMinutes(), "<br>");
+      document.write("Current Month:", CurentDate.getMonth(), "<br>");
+      document.write("Current Sceond:", CurentDate.getSeconds(), "<br>");
+      document.write("Current Time:", CurentDate.getTime(), "<br>");
+
+
+      //////
+      const YearDiff = new Date("March 24, 2027").getFullYear() - new Date().getFullYear() ;
+      console.log(YearDiff+" Years");
+
+      ////////
+      const msDiff = new Date("March 24, 2025").getTime() - new Date().getTime() ;
+      const Days = Math.floor(msDiff/(1000 * 60 * 60 *24));//conveert millisecond into days , 1 second mein 1000 milliseconds hote hain. 1 minute mein 60 seconds hote hain. 1 hour mein 60 minutes hote hain. 1 din mein 24 hours hote hain.
+      console.log(Days );
+      //Math.floor() ensures that if the result has a decimal, it rounds it down to the nearest whole number
+    
+    </script>
+  </body>
+</html>

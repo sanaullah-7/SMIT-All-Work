@@ -1,0 +1,35 @@
+/* using div responsive through flex without using media query */
+section{
+
+    display: flex;
+    justify-content: center;
+flex-wrap: wrap;
+
+}
+div{
+    /* width:40% ; */
+    height:200px ;
+    background-color: green;
+    width:500px;
+    color: white;
+    margin: 10px;
+}
+
+@media (max-width: 900px){
+body{
+    background-color: red;
+    
+}
+}
+
+@media (max-width: 700px){
+div{
+    background-color: blue;
+    width: 100%;
+}}
+@media screen and  (min-width: 600px) and (max-width:800px){
+h1{
+    font-size:60px;
+
+}
+}

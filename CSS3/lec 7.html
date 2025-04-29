@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position Demo</title>
+    <style>
+        body {
+            height: 1500px;
+            
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            background-color: lightblue;
+            border: 2px solid black;
+        }
+        
+        .sticky
+        { position: sticky; top: 0px; background-color: yellow;
+        z-index: ; }
+        .static
+         { position: static  ; }
+       
+        .absolute
+         { position: absolute; top:20px; left: 200px; }
+         .relative
+         { position: relative; top:20px; left: 40px; }
+
+        .fixed
+         { position: fixed; bottom: 10px; right: 10px; }
+      
+    </style>
+</head>
+<body>
+    <div class="box sticky">Sticky</div>
+    <div class="box static">Static</div>
+    <div class="box relative">Relative</div>
+    <div class="box absolute">Absolute</div>
+    <div class="box fixed">Fixed</div>
+
+</body>
+</html>

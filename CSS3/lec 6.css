@@ -1,0 +1,13 @@
+ul{
+    list-style-type: decimal;/* css  does not know its Order or unorder list */
+    list-style-type: decimal-leading-zero;
+    list-style-type:lower-greek;
+    list-style-type: upper-alpha;
+    
+}
+
+.inside{
+    list-style-position: outside;
+    list-style-position: inside;
+    list-style-image: url("./IMAGES/image.png ");
+}

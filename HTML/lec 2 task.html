@@ -1,0 +1,63 @@
+<style>
+    ul li::before
+    {
+        content: "+";
+        color: red;
+        font-weight: bolder;
+        font-size: larger;
+    }
+    ul.a{
+       
+        
+        list-style-type:square;
+    }
+    li.a::before{
+        list-style-position:inside;
+        list-style-type:square;
+        content: "*";
+        color: blue;
+    }
+</style>
+<html>
+    <body>
+        <h3>Orderd List</h3>
+    <ol >
+       <li><del>Jalil Chapli Kabab</del></li>
+       <li><del>Khyber Charsi Tikka</del> </li>
+       <li>Shinwari 
+        <ol type="i">
+            <li>kabuli Pulao</li>
+            <li class="a">Mattan Karahi</li>
+            <li >BBQ</li>
+        </ol>
+        <ul     >
+            <li>kabuli Pulao</li>
+            <li>Mattan Karahi</li>
+            <li>BBQ</li>
+        </ul>
+       </li>
+       <li>Laal Chakoor Rosh</li>
+       <li>Rehman Gul Rice</li>
+       <li>Kabir Dampukht</li>
+       <li>Taru Jabba Chapli kabab</li>
+    </ol>
+
+    <h3>Unorder list</h3>
+    <ul class="a">
+        <li>Dhanya</li>
+        <li>Poodina</li>
+        <li>Dahi</li>
+        <li>Pyaz</li>
+        <li>tomater</li>
+        <li>Cooking Oil
+            <ul>
+                <li class="a">Shama Oil</li>
+                <li>Dalda Oil</li>
+                <li>Kisan Oil</li>
+                <li>Khyber Oil</li>
+                <li>karwan Oil</li>
+            </ul>
+        </li>
+    </ul>
+    </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Operator(num1,num2,operator)
+        {
+            var num1 = +prompt("Enter First Value");
+            var operator = prompt("Enter any Operator")
+            var num2 = +prompt("Enter Second Value");
+           if(operator === "+")
+           {
+           result = num1 + num2;
+
+           }
+           else if (operator === "-")
+          
+           {
+           result = num1 - num2;
+
+           }
+           else if (operator === "*")
+           {
+           result = num1 * num2;
+
+           }
+           else if (operator === "/")
+           if (num2 === 0)
+           {
+            alert ("Error ! Numerator Can't divide by Zero")
+           }else
+           {
+           result = num1 / num2;
+
+           }
+           else
+           alert("Invalid operator!\n Please Enter one of them + , - , * , /")
+        
+           
+            alert ("Result:"+result)
+            return;
+
+        }
+        Operator()
+    </script>
+</body>
+</html>

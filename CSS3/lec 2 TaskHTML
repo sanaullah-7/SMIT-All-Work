@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK</title>
+    <style>
+       
+      
+     .div{
+        height: 520px;
+        width: 300px;
+       border: 2px solid brown;
+       padding: 14px;
+       font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+       border-radius: 10px;
+       }
+       button{
+        background-color: brown;
+        color: white;
+        border: none;
+        padding: inherit;
+        width: 15em;
+        border-radius: 10px;
+        font-size: larger;
+        cursor: pointer;
+
+       }
+       .main-div{
+        display: flex;
+        justify-content: space-between;
+       }
+       @media only screen and  (max-width: 640px)
+     { 
+        .main-div{
+        display: grid;}
+        div{
+        margin-top: 30px;}
+     }
+    
+    </style>
+</head>
+<body>
+    <div class="main-div" >
+        <div class="div">
+            <img src="IMAGES/image.png" alt="Error" title="Web Developer">
+            <h1>SanaUllah-Yousafzai</h1>
+            <p>SanaUllah Yousafzai is Professional Web Devleoper and he is also have alot of skill like Digital marketing,UX Desiging and so more.He also working with diffent Companies in pakistan and alson work from out of country with Remotely. </p>
+            <p>Hours Per Rate: USD25/-</p>
+            <button>Hire Me</button>
+        </div>
+
+        <div class="div">
+            <img src="IMAGES/image.png" alt="Error" title="Web Developer">
+            <h1>Hammad Khan</h1>
+            <p>Hammad Khan is Professional Web Devleoper and he is also have alot of skill like Digital marketing,UX Desiging and so more.He also working with diffent Companies in pakistan and alson work from out of country with Remotely. </p>
+            <p>Hours Per Rate: USD15/-</p>
+            <button>Hire Me</button>
+        </div>
+    </div>
+</body>
+</html>

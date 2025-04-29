@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>weather Calcualtor</h1>
+    
+    <script>
+      function Temperature(Celsius, Farenheit) {
+        var Farenheit = prompt("Enter Temperature in Farenheit");
+        var Celsius = ((Farenheit - 32) * 5) / 9;
+        alert("Temperature in Celsius is " + Celsius.toFixed(1) + "°C");
+        if (Celsius >= 50) {
+          alert("Stay Hydrated!");
+        } else if (Celsius >= 40) {
+          alert("Take a Sahware!");
+        } else if (Celsius >= 35) {
+          alert("Good weather!");
+        } else if (Celsius >= 25) {
+          alert("Bring my Jacket!");
+        } else if (Celsius >= 15) {
+          alert("Stay indoors!");
+        } else if (Celsius >= 0) {
+          alert("Burn the Fire!");
+        }
+      }
+      Temperature();
+    </script>
+    <!-- In this case, descending order is preferred because:
+
+High temperature ranges (e.g., above 40°C) are checked first.
+If the temperature is high enough, it will match the first condition, and no further conditions will be evaluated.
+Conclusion:
+For addition and subtraction operations, the order does not matter. You can add or subtract values in any sequence.
+
+For range-based checks (like temperature ranges), the descending order is best because it ensures the correct range is matched first before checking lower ranges. -->
+  </body>
+</html>

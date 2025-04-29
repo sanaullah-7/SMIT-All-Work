@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0PX;
+
+        }
+        /* top header */
+        .c1{
+            height: 30px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding-top: 13px   ;
+            /* font-style: Poppins; */
+        }
+        b{
+         text-decoration: underline;
+         margin-left: 10px;
+        }
+        #c2{
+            background-color: black;
+            color: white;
+            margin-left: 50px;
+        }
+        /* header */
+        .c3{
+            display: flex;
+            justify-content:space-evenly;
+            padding: 20px;
+
+        }
+       
+        
+        .c4{
+            font-size: x-large;
+            font-weight: bolder;
+            
+        }
+        a{
+            font-weight: bold;
+            margin-top: 5px;
+            text-decoration: none;
+            color: black;
+        }
+        .c5:hover{
+            color: blue;
+            ;
+        }
+        .c6:focus{
+            text-decoration: underline;
+        }
+        .c6{
+            text-decoration: underline;
+            color: red;
+        }
+        .footer{
+            height: 300px;
+            width: 100%;
+            margin-top: 50px;
+        }
+        
+        *{
+    padding: 0px;
+    margin: 0px;
+}
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    overflow: hidden;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.image{
+    min-width: 300px;
+    max-width: 500px;
+    border-radius: 2px;
+}
+.image img{
+    width: 100%;
+}
+.description{
+    min-width: 300px;
+    max-width: 500px;
+}
+.description>h1{
+    font-size: 30px;
+}
+.description form>input{
+    width: 90%;
+    height: 50px;
+    border: none;
+    padding: 5px;
+    margin: 5px;
+    border-bottom: 1px solid gray;
+    border-radius: 5px;
+}
+.description>button {
+    width: 90%;
+    height: 50px;
+    border: none;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+}
+.btn1{
+    background: red;
+    color: white;
+}
+.prar{
+    margin-top: 25px;
+    text-align: center;
+}
+.btn3{
+    border: none;
+}
+      
+
+
+
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <p class="c1">Winter Sales For All Coustomers with Free Delivery-OFF 50%!  <b> ShopNow</b> 
+        <select name="" id="c2">
+            <option value="">English</option>
+            <option value="">Urdu</option>
+            <option value="">Pashtu</option>
+            <option value="">Chinese</option>
+        </select></p>
+    </header>
+    <header class="c3">
+        <Select class="c4">
+        <option  value=""><b  >Exclusive</b></option>
+        <option value="">Woman's Shop</option>
+        <option value="">Men's Shop</option>
+        <option value="">Electronic Shop</option>
+        <option value="">Sports Shop</option>
+        <option value="">Mediceine</option>
+        <option value="">Baby & Kid's Shop</option>
+    </Select>
+    <a  href="/Home.html"><p class="c5">Home</p></a>
+    <a  href="/Contact.html"><p class="c5">Contact</p></a>
+    <a href="/About.html"><p class="c5">About</p></a>
+    <a class="c6" href="/SignUp.html"><p class="c5">Sign Up</p></a>
+    <p><a href="/Favourite.html"><img src="./assets/images/favourite.png" alt=""></a></p>
+    <p><a href="Cart.html"><img src="./assets/images/Cart.png" alt=""></a></p>
+   
+     </header>
+
+     <div class="container">
+        <div class="image">
+            <img src="/assets/images/spopping.jpg" alt="">
+        </div>
+        <div class="description">
+            <h1>Create an account</h1>
+            <p>Enter our details below</p>
+            <form action="#">
+                <input type="text" placeholder="Enter your Name">
+                <input type="email" placeholder="Enter your Email">
+                <input type="password" placeholder="Enter your Password">
+            </form>
+            <button type="button" class="btn1">Create Account</button>
+            <button type="button" class="btn2">Sign up with Google</button>
+            <p class="prar">Already have account? <button type="button"class="btn3">log in</button></p>
+        </div>
+    </div>
+    <footer ><img class="footer" src="/assets/images/Footer (1).png" alt=""></footer>
+</body>
+</html>

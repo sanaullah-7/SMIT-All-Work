@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Pass By Reference</h1>
+    <script>
+        //31
+        document.write("<br>31. Assign an array to another variable and modify the original array. Print both variables.<br>")
+        let x = [1,2,3,4,5]
+        let y = x
+        y[5] = 6;
+        console.log("31: Original Array :", x);
+        console.log("31: Modified Array :", y);
+        document.write('Answer : ', x,"<br>",y);
+        //32
+        document.write("<br>32. Create a function that adds an element to an array and check if the original array changes. <br>")
+       function test(num)
+       {
+        var num = [1,2,3,4,5]
+        console.log("32: Original Array :", num);
+        document.write('Original Array: ', num,"<br>");
+        num.push(6,7);
+        console.log("32: Modified Array :", num);
+        document.write('Answer : ', num,"<br>");
+       }
+       test();
+        //33
+        document.write("<br>33. Pass an array to a function, modify its first element, and print the modified array. <br>")
+       function test(num)
+       {
+        var num = [1,2,3,4,5]
+        console.log("33: Original Array :", num);
+        document.write('Original Array: ', num,"<br>");
+        num[0]=99;
+        console.log("33: Modified Array :", num);
+        document.write('Answer : ', num,"<br>");
+       }
+       test();
+         //34
+         document.write("<br>34. Create an array, pass it to another variable, modify the second variable, and print both. <br>")
+        let a = [1,2,3,4,5]
+        console.log("34: Original Array :", a);
+        document.write('Answer : ', a,"<br>");
+        let b = a;
+        b.push(100) 
+        console.log("34: Modified Array :", b);
+        document.write('Answer : ', b,"<br>");
+         //35
+         document.write("<br>35. Check if two variables referencing the same array are equal after modifying one.  <br>")
+        let num1 = [1,2,3,4,5]
+        let num2 = num1;
+        num2.push(100,200,300) 
+        console.log("35: Modified Array :", num1);
+        console.log("35: Original Array :", num2);
+        document.write('Original : ', num1,"<br>");
+        document.write('Answer : ', num2,"<br>");
+      //36
+      document.write("<br>36. Create an array, pass it to a function that removes an element, and print the result. <br>")
+       function testing(remove)
+       {
+        remove.pop();
+        
+        
+       
+       }
+       var num = [1,2,3,4,5]
+       console.log("36: Original Array :", num);
+       document.write('Original Array: ', num,"<br>");
+       testing(num);//We call the testing() function and pass num as the argument.
+       
+       console.log("36: Modified Array :", num);
+       document.write('Answer : ', num,"<br>");
+       //37
+       document.write("<br>37. Store an array in two different variables, modify one using push(), and print both. <br>")
+       let Alphabatic = ["a","b","c","d"]
+        let Assign = Alphabatic
+        Assign.push("e") 
+        console.log("37: Original Array :", Alphabatic);
+        console.log("37: Modified Array :", Assign);
+        document.write('Answer : ', Alphabatic,"<br>",Assign);
+        //38
+        document.write("<br><br>38. Use pop() on an array inside a function and see if the original array changes.  <br>")
+       function test(num)
+       {
+        var num = [1,2,3,4,5]
+        console.log("38: Original Array :", num);
+        document.write('Original Array: ', num,"<br>");
+        num.pop();
+        console.log("38: Modified Array :", num);
+        document.write('Answer : ', num,"<br>");
+       }
+       test();
+       //39
+      document.write("<br>39. Pass an array to a function that changes its length and check the effect.<br>")
+       function testing(remove)
+       {
+        remove.length=3;
+       }
+       var num = [1,2,3,4,5]
+       // Pass the array to the function
+       console.log("39: Original Array :", num,"<br>original length=",num.length); // [1, 2, 3, 4, 5]
+       document.write('Original Array: ', num,"<br>original length=",num.length,"<br>");
+       testing(num);
+       console.log("39: Modified Array :", num,"<br>Change length=",num.length); // [1, 2, 3,]
+       document.write('Answer : ', num,"<br>Change length=",num.length,"<br>");
+       
+       //40
+       document.write("<br>40. Create two separate arrays with identical elements and check if they are strictly equal.<br>")
+       let arr1 = [1, 2, 3, 4, 5];
+       let arr2 = [1, 2, 3, 4, 5]; // This creates a new array, not a reference to arr1 
+       console.log("40: Array 1 :", arr1===arr2);// This will print: false
+       console.log("40: Array 2 :", arr2);
+       document.write('Answer : ', arr1,"<br>",arr2===arr1);// This will print: false
+       let arrtest1 = [1, 2, 3, 4, 5];
+       let arrtest2 = arrtest1; // This creates a same loactional array 
+       console.log("Paecticse: Array 1 :", arrtest1===arrtest2);// This will print: true
+       console.log("PArctis: Array 2 :", arrtest2);
+       document.write('<br>Answer : ', arrtest1,"<br>",arrtest2===arrtest1);// This will print: true
+      
+
+
+
+    </script>
+</body>
+</html>
